@@ -1,0 +1,13 @@
+Application Description
+
+This is a surf forecasting application that is more community driven than current prevalent surf reporting websites. 
+Most surf reporting websites have reports that are submitted by  selected arbiters from different regions. The metrics 
+used for determining a 1 to 5 star rating are often times not as accurate as what is experienced at a location. I'd like
+to design a web application that is constantly taking in user submitted ratings and reports in order to update the metric
+for predicting reports and creating accurate ratings for forecast. I'd also like to allow for community members to submit
+their own reports for their local spot which will be sorted on a report summary page based on reputation. This reputation
+will be calculated from other users input on how accurate they assess the report to be. 
+
+The intended audience for my web application is any oceanic enthusiast that  rely on accurate surf report data. 
+If they feel like the current report summaries and ratings for these websites are not as accurate as they hoped and 
+would like a chance to give their input than this site could be that opportunity. 

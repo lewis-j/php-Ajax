@@ -1,0 +1,108 @@
+        body{
+            margin-top: 0px;
+        }
+
+.container {
+    
+    width: 80%;
+    margin: auto;
+}
+        .myPanels {
+
+        display: inline-block;
+        margin-right: -4px;
+        width: 20%;
+        border: 1px solid black;
+        padding: 20px;
+        vertical-align: top;
+        min-height: 500px;  
+        margin-right: 5px;    
+        
+        }
+        
+        .myPanels figure img{
+         height: 300px;
+         width: 300px;    
+            
+            
+        }
+
+        aside {
+            display: inline-block;
+            width: 10%;
+            font-size: 1.5em;
+            border: .5px solid black;
+            padding: 10px;
+            
+            
+        }
+        nav {
+            clear: both; 
+        }
+        
+        .h-image{
+            float: left;
+        }
+        
+        hgroup{
+            
+           position: relative;
+           left: 150px;
+        }
+        hgroup h3{
+            position: absolute;
+            top: 25px;
+            left: 80px;
+            
+        }
+        nav ul{
+           background-color: darkgray;
+        
+        }
+        
+        nav ul li{
+            display: inline-block;
+            border-left: .5px solid white;
+            border-right: .5px solid white;
+            margin-right: -5px;
+            padding:8px;
+        }
+        nav ul li a:link{
+            color:white;
+            text-decoration: none;
+        }
+        nav ul li a:hover{
+            color: darkgray;
+
+        }
+          nav ul li:hover{
+            background-color: white;
+
+        }
+
+        figure{
+          margin: 0px;  
+            
+        }
+
+        .gal-item{
+         display:inline-block;
+         height: 200px;
+         width: 200px;  
+         box-shadow: 10px 10px 5px #aaaaaa;
+          margin-top: 15px;
+        }
+
+          .gal-item:hover {
+        -ms-transform: scale(1.5); /* IE 9 */
+       -webkit-transform: scale(1.5); /* Safari 3-8 */
+         transform: scale(1.5);
+        }
+
+
+            
+        
+        footer{
+            background-color: darkgray;
+            margin-top: 50px;
+        }

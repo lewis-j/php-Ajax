@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Guessing Game </title>
+         <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Guessing Game</div>
+                    <div class="panel-body">
+                        <div class="question">
+                        </div>
+                        <input type="textarea" name="guess" class="guess"/>
+                        <button type="button" class="btn button-primary myButton">Submit</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+<script>
+    
+    var highRange = 100, lowRange = 0;
+    var randomNum = getRandomChoice(lowRange,highRange);
+    var userScore = 0;
+    var currentPoints = 20;
+    
+    var message = "Pick a number between 0 and 100!"
+    
+    $(".question").val(message);
+    
+    $('.myButton').click(function(){
+      var user = $('.guess').val();
+      if(user === randomNum){
+          console.log("success");
+          userScore = currentPoints;
+          currentPoints = 20;
+          lowRange = 0;
+          highRange = 100;
+          randomNum = getRandomChoice(lowRange,highRange);
+      }else{
+          if(user < randomNum){
+              lowRange = user;
+          }else{
+              highRange = user;
+          }
+          randomNum = getRandomChoice(lowRange, highRange);
+          if(currentPoints>0){
+              currentPoints--;
+          }
+          
+          
+      }
+        
+    });
+    
+    
+    function getRandomChoice(low,high ){
+        return Math.floor(low + Math.random() * high+1);
+    }
+    
+    
+</script>
+
+
+    </body>
+</html>
